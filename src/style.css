@@ -1,1 +1,61 @@
-/* Acá va tu código */
+
+ select {
+	background: white;
+	border:none;
+	font-size: 14px;
+	height: 30px;
+	padding: 5px;
+	width: 250px;
+	font-family: 'Handlee', cursive;
+	font-size:17px; 
+	
+ }
+ select:focus{ outline: none;}
+ 
+ 
+ 
+
+ .boton {
+	background-color: rgb(19, 94, 84); 
+	border-radius: 10px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Handlee', cursive;
+	
+  }
+
+  .titulo {
+	font-size:40px; 
+	font-family: 'Handlee', cursive;
+	
+	
+  }
+  
+.mensaje {
+
+	font-family: 'Handlee', cursive;
+	font-size:18px; 	
+
+}
+
+.footer {
+
+	text-align: center;
+	line-height:60px;  
+	font-family: 'Handlee', cursive; 
+	height: 10px;
+	
+	
+	
+}
+
+::placeholder {
+	font-size:15px;
+	font-family: 'Handlee', cursive; 
+	
+  }
+
+  

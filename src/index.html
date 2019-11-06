@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../img/candado.png">
+  <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+  
+
+</head>
+
+<body   align="center" style="background-color:  rgb(220, 116, 151);">
+
+
+  <div>
+    <h1 class="titulo" >Mensajería Secreta <img src="../img/candado.png" style="width:30px; height:30px"> </h1>
+  </div>
+
+  <div  style="margin-top: 50px">
+
+    <div  style="margin-right:60px; width: 40%; height: 20px; display: inline-block;">
+        <select>
+          <option> Elige un tipo de cifrado </option>
+          <option> 1 </option>
+          <option> 2 </option>
+          <option> 3 </option>
+        </select>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+    <div style="margin-left:60px; width: 40%;height: 20px; display: inline-block;">
+      <h3 class="mensaje" style="text-align: left;"> 
+        » Debes indicarle al receptor el tipo de cifrado que
+        seleccionaste!! </h3>
+    </div>
+
+  </div>
+  
+
+  <div style="margin-top:60px">
+
+    <textarea placeholder="Escriba aquí su texto a Codificar/Decodificar..." type="text" cols="70" rows="20" style="margin-right:60px; border:solid 1px black"></textarea>
+    <textarea placeholder="Aqui se mostrará su mensaje Codificado/Decodificado..." type="text" cols="70" rows="20" style="margin-left:60px; border:solid 1px black"></textarea>
+
+  </div>
+
+  <div>
+
+
+      <div style="width:40%; height: 70px; display: inline-block">
+     
+        <input class="boton" type="button" value="CODIFICAR" style="margin-right:40px">
+     
+        <input class="boton" type="button" value="DECODIFICAR">
+  
+     
+      </div>
+  
+     
+      <div style="margin-left:60px; width: 40%;height: 70px; display: inline-block;">
+  
+        <input class="boton" type="button" value="LIMPIAR">
+
+      </div>
+  
+     
+    </div>
+    
+  
+ 
+
+    <hr>
+    <footer class="footer"> Todos los derechos reservados &copy; Desarrolado: Corina Varas </footer>
+
+  
+    
+
+
+
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
