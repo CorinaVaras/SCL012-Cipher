@@ -11,25 +11,25 @@
 
 </head>
 
-<body   align="center" style="background-color:  rgb(220, 116, 151);">
+<body align="center" style="background-color:  rgb(199, 107, 138);">
 
 
-  <div>
+  <div id="root">
     <h1 class="titulo" >Mensajería Secreta <img src="../img/candado.png" style="width:30px; height:30px"> </h1>
   </div>
 
   <div  style="margin-top: 50px">
 
-    <div  style="margin-right:60px; width: 40%; height: 20px; display: inline-block;">
-        <select>
+    <div  style="margin-right:90px; width: 40%; height: 50px; display: inline-block">
+        <select id="seleccion">
           <option> Elige un tipo de cifrado </option>
-          <option> 1 </option>
-          <option> 2 </option>
-          <option> 3 </option>
+          <option value="uno"> 1 </option>
+          <option value="dos"> 2 </option>
+          <option value="tres"> 3 </option>
         </select>
     </div>
 
-    <div style="margin-left:60px; width: 40%;height: 20px; display: inline-block;">
+    <div style="margin-left:40px; width: 40%;height: 20px; display: inline-block;">
       <h3 class="mensaje" style="text-align: left;"> 
         » Debes indicarle al receptor el tipo de cifrado que
         seleccionaste!! </h3>
@@ -40,19 +40,19 @@
 
   <div style="margin-top:60px">
 
-    <textarea placeholder="Escriba aquí su texto a Codificar/Decodificar..." type="text" cols="70" rows="20" style="margin-right:60px; border:solid 1px black"></textarea>
-    <textarea placeholder="Aqui se mostrará su mensaje Codificado/Decodificado..." type="text" cols="70" rows="20" style="margin-left:60px; border:solid 1px black"></textarea>
+    <textarea id="textArea" placeholder="Escriba aquí su texto a Codificar/Decodificar..." type="text" cols="75" rows="20" style="margin-right:60px; border:solid 1px black"></textarea>
+    <textarea id="textAreaResult" placeholder="Aqui se mostrará su mensaje Codificado/Decodificado..." type="text" cols="75" rows="20" style="margin-left:60px; border:solid 1px black"></textarea>
 
   </div>
 
   <div>
 
 
-      <div style="width:40%; height: 70px; display: inline-block">
+      <div style="width:40%; display: inline-block; margin-top:10px" >
      
-        <input class="boton" type="button" value="CODIFICAR" style="margin-right:40px">
+        <input  id="btn1" class="boton" type="button" value="CODIFICAR">
      
-        <input class="boton" type="button" value="DECODIFICAR">
+        <input id="btn2" class="boton" type="button" value="DECODIFICAR">
   
      
       </div>
@@ -60,7 +60,7 @@
      
       <div style="margin-left:60px; width: 40%;height: 70px; display: inline-block;">
   
-        <input class="boton" type="button" value="LIMPIAR">
+        <input id="btn3" class="boton" type="button" value="LIMPIAR">
 
       </div>
   

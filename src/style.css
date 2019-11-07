@@ -10,6 +10,7 @@
 	font-size:17px; 
 	
  }
+ 
  select:focus{ outline: none;}
  
  
@@ -19,12 +20,12 @@
 	background-color: rgb(19, 94, 84); 
 	border-radius: 10px;
 	color: white;
-	padding: 15px 32px;
+	padding: 10px 32px;
 	text-align: center;
 	display: inline-block;
 	font-size: 16px;
 	font-family: 'Handlee', cursive;
-	
+	style="margin-right:40px
   }
 
   .titulo {
