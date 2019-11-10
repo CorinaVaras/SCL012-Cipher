@@ -7,75 +7,85 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="../img/candado.png">
   <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
-  
+
 
 </head>
 
-<body align="center" style="background-color:  rgb(199, 107, 138);">
+<body>
+
+  <h1 class="titulo"> Mensajería Secreta </h1>
 
 
-  <div id="root">
-    <h1 class="titulo" >Mensajería Secreta <img src="../img/candado.png" style="width:30px; height:30px"> </h1>
-  </div>
+    <div style="background-color: antiquewhite; opacity:70%; margin-left:20px; margin-right:20px;   padding:10px">
 
-  <div  style="margin-top: 50px">
 
-    <div  style="margin-right:90px; width: 40%; height: 50px; display: inline-block">
-        <select id="seleccion">
-          <option> Elige un tipo de cifrado </option>
-          <option value="uno"> 1 </option>
-          <option value="dos"> 2 </option>
-          <option value="tres"> 3 </option>
-        </select>
+      <strong>
+        <h4 class="mensajeUno"> ¡Bienvenida, aquí podras crear mensajes para comunicarle secretos a tus amigas! </h4>
+      </strong>
+
+      <h3 class="mensajeDos">
+        Es importante indicarle al receptor el tipo de cifrado que
+        utilizaste <br> para que pueda decifrar tu mensaje. </h3>
+
     </div>
 
-    <div style="margin-left:40px; width: 40%;height: 20px; display: inline-block;">
-      <h3 class="mensaje" style="text-align: left;"> 
-        » Debes indicarle al receptor el tipo de cifrado que
-        seleccionaste!! </h3>
+
+    <div style="margin-top:40px">
+
+      <select id="tipoCifrado">
+        <option> Elige un tipo de cifrado </option>
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+      </select>
+
     </div>
 
-  </div>
-  
+    <div style="margin-top:30px; margin-left:20px">
 
-  <div style="margin-top:60px">
+      <textarea id="textArea" type="text" cols="74" rows="15"
+        placeholder="Escriba aquí su texto a Codificar/Decodificar..."></textarea>
 
-    <textarea id="textArea" placeholder="Escriba aquí su texto a Codificar/Decodificar..." type="text" cols="75" rows="20" style="margin-right:60px; border:solid 1px black"></textarea>
-    <textarea id="textAreaResult" placeholder="Aqui se mostrará su mensaje Codificado/Decodificado..." type="text" cols="75" rows="20" style="margin-left:60px; border:solid 1px black"></textarea>
+      <textarea id="textAreaResult" placeholder="Aqui se mostrará su mensaje Codificado/Decodificado..." type="text" cols="74" rows="15"></textarea>
 
-  </div>
+    </div>
 
-  <div>
+    <div>
 
 
-      <div style="width:40%; display: inline-block; margin-top:10px" >
-     
-        <input  id="btn1" class="boton" type="button" value="CODIFICAR">
-     
+      <div style="width:40%; display: inline-block; margin-top:20px; margin-left:30px">
+
+        <input id="btn1" class="boton" type="button" value="CODIFICAR">
+
         <input id="btn2" class="boton" type="button" value="DECODIFICAR">
-  
-     
+
+
       </div>
-  
-     
-      <div style="margin-left:60px; width: 40%;height: 70px; display: inline-block;">
-  
+
+
+      <div style="margin-left:160px; width: 40%;height: 70px; display: inline-block;">
+
         <input id="btn3" class="boton" type="button" value="LIMPIAR">
 
       </div>
-  
-     
+
+
     </div>
-    
-  
- 
 
-    <hr>
-    <footer class="footer"> Todos los derechos reservados &copy; Desarrolado: Corina Varas </footer>
 
   
-    
 
+  <footer style="background-color:white; height:70px; margin-top:30px">
+
+
+    <h1 style="color:black">
+      Creado con <img src="../img/gitCorazon.gif" style="height:30px; width:30px"> por Corina Varas <br> 
+    </h1>
+      <h2>Todos los derechos reservados &copy; </h2> 
+
+   
+
+  </footer>
 
 
 

@@ -1,48 +1,83 @@
 window.cipher = {
-  encode: (texto,valorFijo) => {
+  encode: (texto, valorFijo) => {
 
-  let textCodificado=""; 
+    let valor = parseInt(valorFijo);
+    let textCodificado = "";
+    
 
-  let palabra = texto.toUpperCase();
 
-  for (let i=0; i<palabra.length; i++) {
+    for (let i = 0; i < texto.length; i++) {
 
-    let numLetra = palabra.charCodeAt(i);
-  
-    let resultado = ((numLetra - 65) + valorFijo) % 26 + 65;
-  
-    let resultadoAscci = String.fromCharCode(resultado);
+      let numLetra = texto.charCodeAt(i);
 
-    textCodificado += resultadoAscci;
+      let numRestar = 0;
+      let resultado="";
+      if (numLetra > 64 && numLetra < 91) {
 
-  }
+        numRestar = 65;
+        resultado = ((numLetra - numRestar) + valor) % 26 + numRestar;
+
+      } else if (numLetra>96 && numLetra<123) {
+
+        numRestar=97;
+        resultado = ((numLetra - numRestar) + valor) % 26 + numRestar;
+      }  else if (numLetra === 164 || numLetra === 165){
+        resultado=numLetra+10;
+      } else {
+        resultado=numLetra;
+
+      }
+
+
+
+      let resultadoAscci = String.fromCharCode(resultado);
+
+      textCodificado += resultadoAscci;
+
+    }
 
     return textCodificado;
 
   },
 
-  
-  
-  decode: (texto,valorFijo) => {
 
-    let textCodificado=""; 
-    let palabra = texto.toUpperCase();
 
-  for (let i=0; i<palabra.length; i++) {
+  decode: (texto, valorFijo) => {
 
-    let numLetra = palabra.charCodeAt(i);
-  
-    let resultado = ((numLetra - 65) - valorFijo) % 26 + 65;
-  
-    let resultadoAscci = String.fromCharCode(resultado);
+    let valor = parseInt(valorFijo);
+    let textCodificado = "";
+    
 
-    if (resultadoAscci === ":") {
-      resultadoAscci=" "; 
+    for (let i = 0; i <texto.length; i++) {
+
+      let numLetra = texto.charCodeAt(i);
+      let resultado="";
+      let numRestar = 0;
+      if (numLetra > 64 && numLetra < 91) {
+
+        numRestar = 65;
+        resultado = ((numLetra - numRestar) - valor) % 26 + numRestar;
+
+      } else if (numLetra>96 && numLetra<123) {
+
+        numRestar=97;
+        resultado = ((numLetra - numRestar) - valor) % 26 + numRestar;
+      } else if (numLetra === 174 || numLetra === 175) {
+      resultado=numLetra-10;
+      } else {
+        resultado=numLetra;
+      }
+
+
+      let resultadoAscci = String.fromCharCode(resultado);
+
+      if (resultadoAscci === ":") {
+        resultadoAscci = " ";
+      }
+
+      textCodificado += resultadoAscci;
+
     }
-
-    textCodificado += resultadoAscci;
-
-  }
 
     return textCodificado;
 

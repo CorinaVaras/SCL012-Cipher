@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="4 4 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>iMessage Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-38.1%" y="-38.1%" width="176.2%" height="176.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#67FF81" offset="0%"></stop>
+            <stop stop-color="#01B41F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1277.000000, -431.000000)">
+            <g id="iMessage-Copy-2" filter="url(#filter-1)" transform="translate(1281.000000, 435.000000)">
+                <path d="M27.35705,0 C31.5735,0 33.6812,0 35.95095,0.7175 C38.42895,1.61945 40.38055,3.57105 41.2825,6.04905 C42,8.31845 42,10.42685 42,14.64295 L42,27.35705 C42,31.5735 42,33.6812 41.2825,35.95095 C40.38055,38.42895 38.42895,40.38055 35.95095,41.28215 C33.6812,42 31.5735,42 27.35705,42 L14.64295,42 C10.4265,42 8.31845,42 6.04905,41.28215 C3.57105,40.38055 1.61945,38.42895 0.7175,35.95095 C0,33.6812 0,31.5735 0,27.35705 L0,14.64295 C0,10.42685 0,8.31845 0.7175,6.04905 C1.61945,3.57105 3.57105,1.61945 6.04905,0.7175 C8.31845,0 10.4265,0 14.64295,0 L27.35705,0 Z" id="Icon" fill="url(#linearGradient-2)"></path>
+                <path d="M6.5625,19.5167615 C6.5625,12.0074215 13.3552905,6.55004402 21.65625,6.56252135 C29.9572095,6.57499868 36.75,12.0074215 36.75,19.5167615 C36.75,27.0261015 29.3830105,32.4710017 21.65625,32.4710017 C20.387832,32.4710017 18.9834543,32.2804628 17.8219263,32.1897422 C16.6603983,32.0990217 14.2994874,34.3838456 11.3650568,34.1006795 C12.9614189,32.9672356 13.5832149,31.6507901 13.7681317,30.5064171 C9.57521605,28.2768156 6.5625,24.3189129 6.5625,19.5167615 Z" id="Oval-8" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

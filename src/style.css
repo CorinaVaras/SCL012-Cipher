@@ -5,6 +5,7 @@
 	font-size: 14px;
 	height: 30px;
 	padding: 5px;
+	margin-left: 20px;
 	width: 250px;
 	font-family: 'Handlee', cursive;
 	font-size:17px; 
@@ -12,12 +13,27 @@
  }
  
  select:focus{ outline: none;}
+
+ body {
+
+	background-image: url("../img/18110.jpg");
+	background-size: 100%;
+	padding: 0px;
+	margin:0px; 
+
+ }
+
+ textarea {
+	margin-right:60px; 
+	border:solid 3px black"
+
+ }
  
  
  
 
  .boton {
-	background-color: rgb(19, 94, 84); 
+	background-color: rgb(136, 148, 171);
 	border-radius: 10px;
 	color: white;
 	padding: 10px 32px;
@@ -25,31 +41,49 @@
 	display: inline-block;
 	font-size: 16px;
 	font-family: 'Handlee', cursive;
-	style="margin-right:40px
+	margin-right:40px;
   }
 
   .titulo {
-	font-size:40px; 
+	font-size:50px; 
 	font-family: 'Handlee', cursive;
+	padding:20px; 
 	
 	
-  }
+}
+
+	
   
-.mensaje {
+  
+.mensajeUno {
 
 	font-family: 'Handlee', cursive;
-	font-size:18px; 	
+	font-size:25px;
+	padding-left:10px; 	
+
+	
 
 }
 
-.footer {
+.mensajeDos {
+
+	font-family: 'Handlee', cursive;
+	font-size:18px;
+	padding-left:10px;
+	padding-top:10px;  	
+	padding-bottom:10px; 
+	
+	
+	
+
+}
+
+footer {
 
 	text-align: center;
-	line-height:60px;  
 	font-family: 'Handlee', cursive; 
-	height: 10px;
-	
-	
+	font-size:10px;
+
 	
 }
 
@@ -58,5 +92,14 @@
 	font-family: 'Handlee', cursive; 
 	
   }
+
+  .imgFooter {
+	  
+	height:30px;
+	width: 30px;
+
+  }
+
+ 
 
   
