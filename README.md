@@ -1,3 +1,70 @@
+Mensajeria Secreta  
+
+Es una aplicación web, está diseñada y pensada especialmente para usuarios que tengan la necesidad de comunicar un mensaje de forma secreta.
+Fue creada con el propósito de generar un sitio web donde puedas crear una comunicación totalmente personalizada con una amiga sin riegos de que la comunicación pueda ser divulgada o vista por personas ajenas a ella. 
+
+Los principales usuarios a los que esta destinado este producto es a la generación Millennials, es decir a  los nacidos entre 1981 y 1999, que actualmente tienen una edad comprendida entre 16 y 36 años. 
+
+El objetivo principal del usuario en este producto es poder generar un mensaje de manera efectiva, cumpliendo con el objetivo general del sitio siendo este transmitido de forma secreta.
+
+De esta manera poder crear un metodo donde tengas la certeza de generar un mensaje secreta y de manera segura.  
+
+Interfaz de usuario (UI)
+La interfaz le permite al usuario elegir entre la opción de codificar su mensaje por un tipo de cifrado, ya sea 1 2 ó 3 
+
+Insertar un mensaje (texto) que queremos cifrar.
+Ver el resultado del mensaje cifrado.
+Insertar un mensaje (texto) a descifrar.
+Ver el resultado del mensaje descifrado.
+
+Consideraciones Generales
+
+Es importante que el receptor del mensaje sepa por cual canal estas codificando tu mensaje para que ella lo pueda decodificar por el mismo canal
+
+Está desarrollado a traves de un tipo de cifrado por desplazamientos, llamado codigo César, denominado así en honor al emperador romano Julio César quién lo usaba para enviar órdenes secretas a sus generales, actualmente es una de los cifrados mas conocidos.
+
+https://upload.wikimedia.org/wikipedia/commons/2/2b/Caesar3.svg
+
+Su funcionamiento en si deriva de la sustitucion de una letra del texto original siendo esta reemplazada por otra letra asociada a un numero fijo de posiciones de desplazamientos. Este tipo de cifrado no ofrece mucha seguridad ya que se descifra con mucha facilidad.
+
+Resumen 
+
+Finalmente esta aplicacion web nos servirá para enviar mensajes cifrados a cualquier persona y de este manera poder mantener una conversacion protegida. 
+
+Pre-requisitos Test 📋
+
+Instalación de NODEJS v12.10.0
+Ejecutar npm install para instalar las dependencias 
+npm test
+
+*********************************************************************+
+
+Construido con 🛠️
+
+Vanilla JS - El framework web usado
+JavaScript (ES6)
+HyperText Markup Language (HTML)
+Cascading Style Sheets (CSS)
+
+Expresiones de Gratitud 🎁
+
+Doy gracias a Dios
+Doy gracias a las coachs de laboratoria
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
