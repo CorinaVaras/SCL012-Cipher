@@ -1,4 +1,4 @@
-window.onload = () => {
+// window.onload = () => {
 
 	
    // llamo a mi etiqueta button del id btn1 y la pongo al escucha con el evento click 
@@ -11,7 +11,7 @@ window.onload = () => {
 
 		// Esta validación es para que aparezca una alerta si no se selecciona alguna opción de cifrado en la etiqueta selector  
 		if (seleccion === "Elige un tipo de cifrado") {
-			alert("Por favor elige un tipo de cifrado");
+			alert("Por favor elige un nivel de seguridad");
 			return;
 		}
 		
@@ -49,8 +49,9 @@ window.onload = () => {
 		document.getElementById("textAreaResult").value ="";
 		//Identifico mi etiqueta text area y le paso un valor vacio, para que haga la funcion de limpiar 
 		document.getElementById("textArea").value ="";
+		document.getElementById("tipoCifrado").value="Elige un nivel de seguridad";
 
 	});
 
 
-}
+// }

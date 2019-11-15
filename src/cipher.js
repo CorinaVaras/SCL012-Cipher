@@ -28,7 +28,7 @@ window.cipher = {
         // Válidamos las letras minusculas 
       } else if (numLetra>96 && numLetra<123) {
 
-        resultado = ((numLetra - 97) + valor) % 26 + 65;
+        resultado = ((numLetra - 97) + valor) % 26 + 97;
       
         // Válidamos la ñ y la Ñ
       }  else if (numLetra===241 || numLetra===209){
