@@ -1,6 +1,5 @@
-// window.onload = () => {
 
-	
+
    // llamo a mi etiqueta button del id btn1 y la pongo al escucha con el evento click 
 	document.getElementById("btn1").addEventListener("click", () => {
  
@@ -10,7 +9,7 @@
 		let seleccion=document.getElementById("tipoCifrado").value;
 
 		// Esta validación es para que aparezca una alerta si no se selecciona alguna opción de cifrado en la etiqueta selector  
-		if (seleccion === "Elige un tipo de cifrado") {
+		if (seleccion === "Elige un nivel de seguridad") {
 			alert("Por favor elige un nivel de seguridad");
 			return;
 		}
@@ -31,7 +30,7 @@
 		//Capturo en la variable seleccion el valor ingresado por la etiqueta selector  
 		let seleccion=document.getElementById("tipoCifrado").value;
 		
-		if (seleccion === "Elige un tipo de cifrado") {
+		if (seleccion === "Elige un nivel de seguridad") {
 			alert("Por favor elige un tipo de cifrado");
 			return;
 		}
@@ -54,4 +53,3 @@
 	});
 
 
-// }
