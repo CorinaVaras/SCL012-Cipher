@@ -23,10 +23,11 @@
 
  }
 
- textarea {
+ .textarea {
+	resize: none;
 	margin-right:60px; 
-	border:solid 3px black"
-
+	border:solid 3px black";
+    
  }
  
  
